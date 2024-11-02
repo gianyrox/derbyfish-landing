@@ -1,90 +1,116 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #e0f7fa;
-	color: #00796b;
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	font-family: Arial, sans-serif;
+	background-color: #004d00;
+	/* Dark green */
+	color: white;
+}
 
-.container {
+header {
+	background-color: #003300;
+	/* Darker green */
+	padding: 1rem;
+}
+
+nav {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	/* Full height of the viewport */
+}
+
+nav h1 {
+	color: yellow;
+	/* Brand color */
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 1.5rem;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.hero {
 	text-align: center;
-	/* Center text */
+	padding: 2rem 1rem;
 }
 
-.centered-image {
+.hero-image {
 	max-width: 100%;
-	/* Responsive image */
 	height: auto;
-	/* Maintain aspect ratio */
-	margin: 20px 0;
-	/* Add some space above and below the image */
+	margin: 1rem 0;
 }
 
-
-header h1 {
-	font-size: 2.5em;
+.features,
+.testimonials,
+.cta {
+	padding: 2rem 1rem;
+	text-align: center;
 }
 
-.slogan {
-	font-size: 1.5em;
-	margin-bottom: 20px;
+.features {
+	background-color: rgba(255, 0, 0, 0.2);
+	/* Light red */
 }
 
-main h2 {
-	font-size: 2em;
-	margin: 20px 0;
-}
-
-cta {
-	width: full;
-	height: 400;
-}
-
-form {
-	margin: 20px 0;
-}
-
-input[type="email"] {
-	padding: 10px;
-	font-size: 1em;
-	width: 250px;
-	border: 1px solid #00796b;
+.feature-card {
+	display: inline-block;
+	background-color: white;
+	color: #004d00;
+	/* Dark green */
+	padding: 1rem;
+	margin: 1rem;
 	border-radius: 5px;
 }
 
+.cta {
+	background-color: rgba(0, 0, 255, 0.1);
+	/* Light blue */
+}
+
+input[type="email"] {
+	padding: 0.5rem;
+	border: none;
+	border-radius: 5px;
+	margin-right: 0.5rem;
+}
+
 button {
-	padding: 10px 20px;
-	font-size: 1em;
-	background-color: #00796b;
-	color: white;
+	padding: 0.5rem 1rem;
+	background-color: yellow;
+	color: #004d00;
+	/* Dark green */
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
-button:hover {
-	background-color: #004d40;
-}
-
 footer {
-	margin-top: 50px;
-	font-size: 0.8em;
-	color: #004d40;
+	text-align: center;
+	padding: 1rem 0;
 }
 
-.hidden {
-	display: none;
-}
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
 
-#message {
-	margin-top: 20px;
-	font-size: 1.2em;
-	color: #d32f2f;
+	.feature-card {
+		display: block;
+		width: 80%;
+		margin: 1rem auto;
+	}
 }

@@ -4,42 +4,72 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Derby.Fish - Reel in the Rewards</title>
+	<title>Derby.Fish - Real in the Rewards</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
-	<div class="container">
-
-
-
-		<header>
-			<h1>Welcome to Derby.Fish</h1>
-			<p class="slogan">Reel in the rewards.</p>
-		</header>
-
-
-
-
-		<main>
-			<h2>Cast Away!</h2>
-			<img src="walleye.png" alt="Fish" class="centered-image">
+	<header>
+		<nav>
+			<h1>Derby.Fish</h1>
+			<ul>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#cta">Join Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h2>Real in the Rewards</h2>
+			<p>Join the ultimate sport fishing derby experience! Compete for amazing prizes and enjoy the thrill of the catch.
+			</p>
+			<img src="walleye.png" alt="Walleye fish" class="hero-image">
+			<button>Learn More</button>
+		</section>
+		<section id="features" class="features">
+			<h3>Features</h3>
+			<div class="feature-card">
+				<h4>Exciting Competitions</h4>
+				<p>Participate in regular fishing contests with various categories and prizes.</p>
+			</div>
+			<div class="feature-card">
+				<h4>Community Engagement</h4>
+				<p>Connect with fellow anglers through forums, events, and social media.</p>
+			</div>
+			<div class="feature-card">
+				<h4>Real-Time Leaderboards</h4>
+				<p>Track your progress and see how you stack up against other participants.</p>
+			</div>
+			<div class="feature-card">
+				<h4>Exclusive Rewards</h4>
+				<p>Earn points for participation and redeem them for discounts and merchandise.</p>
+			</div>
+			<div class="feature-card">
+				<h4>Expert Tips</h4>
+				<p>Access articles and videos from top anglers to improve your skills.</p>
+			</div>
+		</section>
+		<section id="testimonials" class="testimonials">
+			<h3>What Our Participants Say</h3>
+			<p>"The best derby experience ever! I’ve met so many great people." - John D.</p>
+			<p>"Loved the community vibes! It feels great to be part of something." - Sarah P.</p>
+			<p>"The competitions are well-organized, and the prizes are fantastic!" - Alex R.</p>
+			<p>"I learned so much from the expert tips section. Highly recommend!" - Lisa T.</p>
+		</section>
+		<section id="cta" class="cta">
+			<h3>Stay Updated</h3>
+			<p>Join our mailing list for updates, tips, and exclusive offers!</p>
 			<form id="emailForm">
 				<input type="email" id="email" placeholder="Enter your email" required>
-				<button type="submit">Fish</button>
+				<button type="submit">Subscribe</button>
 			</form>
-			<p id="message" class="hidden"></p>
-		</main>
-
-
-
-
-		<footer>
-			<p>&copy; 2024 Derby.Fish. All rights reserved.</p>
-		</footer>
-
-	</div>
-	<script src="script.js"></script>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Derby.Fish. All Rights Reserved.</p>
+	</footer>
 </body>
 
 </html>
