@@ -1,4 +1,134 @@
-* {
+:root {
+	/* Base Colors */
+	--dark-green: #124942;
+	--light: #EBFAE6;
+	--accent-red: #F13A2D;
+	--accent-blue: #4897FF;
+	--accent-yellow: #FFE434;
+
+	/* Transparent Versions */
+	--dark-green-trans1: rgba(18, 73, 66, 0.7);
+	/* 70% opacity */
+	--dark-green-trans2: rgba(18, 73, 66, 0.3);
+	/* 30% opacity */
+	--light-trans2: rgba(235, 250, 230, 0.3);
+	/* 30% opacity */
+	--accent-red-trans2: rgba(241, 58, 45, 0.3);
+	/* 30% opacity */
+	--accent-blue-trans2: rgba(72, 151, 255, 0.3);
+	/* 30% opacity */
+	--accent-yellow-trans2: rgba(255, 228, 52, 0.3);
+	/* 30% opacity */
+}
+
+/* Color Classes */
+.dark {
+	color: var(--dark-green);
+}
+
+.light {
+	color: var(--light);
+}
+
+.red {
+	color: var(--accent-red);
+}
+
+.blue {
+	color: var(--accent-blue);
+}
+
+.yellow {
+	color: var(--accent-yellow);
+}
+
+/* Text Size Classes */
+.small {
+	font-size: 1.2rem;
+}
+
+.medium {
+	font-size: 2rem;
+}
+
+.large {
+	font-size: 4rem;
+}
+
+/* Font Weight Classes */
+.light-weight {
+	font-weight: 300;
+}
+
+.normal-weight {
+	font-weight: 400;
+}
+
+.bold-weight {
+	font-weight: 700;
+}
+
+.superbold-weight {
+	font-weight: 1200;
+}
+
+
+/* Boxes  */
+.red-box {
+	border: 2px solid var(--accent-red);
+	border-radius: 8px;
+	background-color: var(--accent-red-trans2);
+}
+
+.red-box:hover {
+	background-color: var(--accent-red);
+}
+
+.blue-box {
+	border: 2px solid var(--accent-blue);
+	border-radius: 8px;
+	background-color: var(--accent-blue-trans2);
+}
+
+.blue-box:hover {
+	background-color: var(--accent-blue);
+}
+
+.green-box {
+	border: 2px solid var(--dark-green);
+	border-radius: 8px;
+	background-color: var(--dark-green-trans2);
+}
+
+.green-box:hover {
+	background-color: var(--dark-green);
+}
+
+.light-box {
+	border: 2px solid var(--light);
+	border-radius: 8px;
+	background-color: var(--light-trans2);
+}
+
+.light-box:hover {
+	background-color: var(--light);
+}
+
+.yellow-box {
+	border: 2px solid var(--accent-yellow);
+	border-radius: 8px;
+	background-color: var(--accent-yellow-trans2);
+}
+
+.yellow-box:hover {
+	background-color: var(--accent-yellow);
+}
+
+
+
+
+/* Ensure no padding around spans */
+di * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -6,96 +136,159 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: #004d00;
+	background-color: var(--dark-green);
 	/* Dark green */
 	color: white;
 }
 
-header {
-	background-color: #003300;
+
+/* Header Styles */
+.header {
+	background-color: var(--dark-green);
 	/* Darker green */
 	padding: 1rem;
 }
 
-nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-nav h1 {
-	color: yellow;
-	/* Brand color */
-}
 
-nav ul {
+.nav-list {
 	list-style-type: none;
 	display: flex;
+	align-items: center;
+	padding-left: 0;
+	/* Remove default padding */
 }
 
-nav ul li {
+.nav-item {
 	margin-left: 1.5rem;
 }
 
-nav ul li a {
+.nav-link {
 	color: white;
 	text-decoration: none;
 }
 
+.cta-link {
+	text-decoration: none;
+	/* Remove underline from the link itself */
+}
+
+
+
 .hero {
-	text-align: center;
-	padding: 2rem 1rem;
+	background: linear-gradient(to bottom,
+			var(--dark-green) 0%,
+			var(--accent-red) 70%,
+			var(--accent-red) 100%);
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* Align items to the left */
+	align-items: flex-start;
+	/* Center items vertically */
+	padding-left: 5%;
+	padding-top: 5%;
+	/* Adjust left padding to slightly move the header */
+	text-align: left;
 }
 
-.hero-image {
-	max-width: 100%;
-	height: auto;
-	margin: 1rem 0;
+.centered {
+	justify-content: center;
 }
 
-.features,
-.testimonials,
-.cta {
-	padding: 2rem 1rem;
-	text-align: center;
+/* Input Row */
+.input-row {
+	display: flex;
+	width: 100%;
+	gap: 10px;
+	/* Space between input and button */
 }
 
-.features {
-	background-color: rgba(255, 0, 0, 0.2);
-	/* Light red */
-}
-
-.feature-card {
-	display: inline-block;
-	background-color: white;
-	color: #004d00;
-	/* Dark green */
+.input-field {
+	font-size: 1rem;
 	padding: 1rem;
-	margin: 1rem;
-	border-radius: 5px;
+	border: 2px solid var(--light);
+	border-radius: 8px;
+	/* Rounded borders */
+	background-color: var(--light-trans2);
+	color: var(--light);
+	width: 60%;
+	/* Fixed width for input */
 }
+
+.input-field::placeholder {
+	color: var(--light);
+	opacity: 0.7;
+}
+
+.input-field:focus {
+	outline: none;
+	border-color: var(--accent-blue);
+	/* Highlight input when focused */
+}
+
+/* Button */
+.sign-up-button {
+	padding: 1rem;
+	width: 10rem;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sign-up-text {
+	margin: 0;
+	padding: 0;
+}
+
+
+.howitworks {
+	position: relative;
+	width: 100%;
+}
+
+.background-image {
+	width: 100%;
+	height: auto;
+	/* Maintain aspect ratio */
+	display: block;
+	/* Remove any space below the image */
+}
+
+.iphone-image {
+	position: absolute;
+	top: 52%;
+	/* This positions the image relative to the parent container */
+	left: 73%;
+	/* Move the image 73% from the left side */
+	height: 55%;
+	/* Set the image height to 90% of the parent */
+	z-index: 10;
+	/* Ensure this image appears above the background */
+	transform: translate(-50%, -50%);
+	/* Adjust for proper centering if necessary */
+}
+
 
 .cta {
-	background-color: rgba(0, 0, 255, 0.1);
-	/* Light blue */
+	background: var(--dark-green);
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Align items to the left */
+	align-items: center;
+
+	/* Center items vertically */
+	/* Adjust left padding to slightly move the header */
+	text-align: left;
 }
 
-input[type="email"] {
-	padding: 0.5rem;
-	border: none;
-	border-radius: 5px;
-	margin-right: 0.5rem;
-}
-
-button {
-	padding: 0.5rem 1rem;
-	background-color: yellow;
-	color: #004d00;
-	/* Dark green */
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
 
 footer {
 	text-align: center;
@@ -106,11 +299,5 @@ footer {
 	nav ul {
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.feature-card {
-		display: block;
-		width: 80%;
-		margin: 1rem auto;
 	}
 }
