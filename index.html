@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Derby.Fish - Sport Fishing Derbies</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
 	<script src="script.js" defer></script>
 </head>
 
 <body>
 	<header class="header">
 		<nav class="nav">
-			<h1 class="medium">
+			<h1 class="large">
 				<span class="blue bold-weight">Derby</span>
 				<span class="red superbold-weight">.</span>
 				<span class="yellow bold-weight">Fish</span>
@@ -32,19 +33,46 @@
 	</header>
 	<main>
 
-		<section class="hero">
-			<h1 class="light large bold-weight">
-				Reel in the Rewards<br>
-				on
-				<span class="blue bold-weight">Derby</span>
-				<span class="dark superbold-weight">.</span>
-				<span class="yellow bold-weight">Fish</span>
-			</h1>
-			<div class="input-row">
-				<input type="text" class="input-field" placeholder="Enter your email" autocomplete="email">
-				<button class="sign-up-button yellow-box">
-					<p class="light small bold-weight sign-up-text">Sign Up</p>
-				</button>
+		<section id="cta" class="hero">
+			<div class="hero-copy">
+				<h1 class="light xlarge bold-weight nomp">
+					Reel in the Reward$!
+				</h1>
+				<p class="small light-weight">
+					<span class="blue bold-weight">Derby</span>
+					<span class="dark superbold-weight">.</span>
+					<span class="yellow bold-weight">Fish</span>
+					is a catch & release sport fishing derby app for anglers to compete against other anglers and win big.
+				</p>
+				<div class="hero-copy-bullets">
+					<div class="hero-bullet">
+						<img src="public/images/fish-icon.png" alt="Save Your Catches" class="hero-bullet-image">
+						<p class="light bold-weight small hero-bullet-text">Save Your<br />Catches</p>
+					</div>
+					<div class="hero-bullet">
+						<img src="public/images/fishingrods-icon.png" alt="Compete Against Anglers" class="hero-bullet-image">
+						<p class="light bold-weight small hero-bullet-text">Compete Against<br />Anglers</p>
+					</div>
+					<div class="hero-bullet">
+						<img src="public/images/handshake-icon.png" alt="Gain Sponsor Recognition" class="hero-bullet-image">
+						<p class="light bold-weight small hero-bullet-text">Gain Sponsor<br />Recognition</p>
+					</div>
+					<div class="hero-bullet">
+						<img src="public/images/money-icon.png" alt="Win Big Money!" class="hero-bullet-image">
+						<p class="light bold-weight medium hero-bullet-text">Win Big!</p>
+					</div>
+				</div>
+			</div>
+			<div class="hero-cta">
+				<h2 class="blue large bold-weight">
+					Sign up and cast for ca$h<br />
+					today! </h2>
+				<div class="input-row">
+					<input type="text" class="input-field" placeholder="Enter your email" autocomplete="email">
+					<button class="sign-up-button green-box">
+						<p class="light small bold-weight sign-up-text">Sign Up</p>
+					</button>
+				</div>
 			</div>
 		</section>
 
@@ -54,23 +82,22 @@
 			<img src="public/images/iphone-demo.png" alt="iPhone Demo" class="iphone-image">
 		</section>
 		<section id="rewards" class="rewards">
-			<h1 class="large light bold">Rewards</h1>
-			<h2 class="medium blue normal-weight">Big Fish Win Big Money</h2>
-			<p class="light small light-weight">
-				Anglers who have competed in past derbies have won thousands of dollars per derby. Derby.Fish allows anglers to
-				participate in specific rankboards to compete in their style events.
-			</p>
-		</section>
-
-		<section id="cta" class="cta">
-			<h1 class="light large bold-weight">
-				Sign up for early access!
-			</h1>
-			<div class="input-row centered">
-				<input type="text" class="input-field" placeholder="Enter your email" autocomplete="email">
-				<button class="sign-up-button yellow-box">
-					<p class="light small bold-weight sign-up-text">Sign Up</p>
-				</button>
+			<div class="rewards-image-section">
+				<img class="rewards-image" src="public/images/money-icon.png" alt="make money on derby.fish">
+			</div>
+			<div class="rewards-copy">
+				<h1 class="xlarge light bold-weight">Rewards</h1>
+				<h2 class="medium blue bold-weight">Big Fish Win Big Money</h2>
+				<p class="small light-weight">
+					Anglers who have competed in past derbies have won thousands of dollars per derby. Derby.Fish allows anglers
+					to
+					participate in specific rankboards to compete in their style events.
+				</p>
+				<a href="#cta" class="cta-link">
+					<button class="sign-up-button red-box">
+						<p class="sign-up-text light small bold-weight">Sign Up</p>
+					</button>
+				</a>
 			</div>
 		</section>
 
