@@ -252,7 +252,7 @@ body {
 	margin: 1%;
 	border-radius: 8px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	text-align: center;
 }
