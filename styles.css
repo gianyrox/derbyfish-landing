@@ -196,13 +196,13 @@ body {
 			var(--dark-green) 0%,
 			var(--accent-red) 70%,
 			var(--accent-red) 100%);
-	height: 400px;
+	min-height: 400px;
+	padding: 5%;
+	padding-top: calc(6rem + 3%); /* Account for navbar height (6rem) plus padding */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: flex-end;
-	padding: 5%;
-	padding-top: 3%;
 	text-align: left;
 }
 
