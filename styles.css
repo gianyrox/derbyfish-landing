@@ -224,7 +224,6 @@ body {
 
 .hero-copy-bullets {
 	display: flex;
-	flex-wrap: wrap;
 	padding: 1rem;
 	gap: 1rem;
 	border: 2px solid var(--dark-green);
