@@ -402,39 +402,3 @@ footer {
 	}
 	
 }
-
-/* Store Buttons */
-.store-buttons {
-	display: flex;
-	width: 99%;
-	gap: 0rem;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-
-.store-button {
-	width: 39%;
-	transition: transform -1.2s ease;
-}
-
-.store-button:hover {
-	transform: scale(0.05);
-}
-
-.store-badge {
-	width: 99%;
-	height: auto;
-}
-
-@media (max-width: 767px) {
-	.store-buttons {
-		flex-direction: column;
-		gap: 0rem;
-	}
-
-	.store-button {
-		width: 59%;
-	}
-}
-
