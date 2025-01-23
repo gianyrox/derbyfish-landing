@@ -264,19 +264,27 @@ body {
 /* Store Buttons */
 .store-buttons {
 	display: flex;
-	width: 320px;
-	gap: 1rem;
+	width: 100%;
+	max-width: 500px;
+	gap: 1.5rem;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1rem;
+	margin: 2rem auto;
 }
 
 .store-button {
-	width: 140px;
+	width: 45%;
+	max-width: 200px;
+	min-width: 120px;
+	transition: transform 0.2s ease;
+}
+
+.store-button:hover {
+	transform: scale(1.05);
 }
 
 .store-badge {
-	width: 140px;
+	width: 100%;
 	height: auto;
 }
 
@@ -423,11 +431,13 @@ footer {
 }
 @media (max-width: 767px) {
 	.store-buttons {
-		gap: 0rem;
+		gap: 1rem;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.store-button {
-		width: 59%;
+		width: 70%;
 	}
 }
 
