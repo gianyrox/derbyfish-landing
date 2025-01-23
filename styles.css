@@ -337,27 +337,30 @@ body {
 .howitworks {
 	position: relative;
 	width: 100%;
-	height: 600px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .background-image {
-	position: absolute;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 1;
+	height: auto;
+	/* Maintain aspect ratio */
+	display: block;
+	/* Remove any space below the image */
 }
 
 .iphone-image {
-	position: relative;
-	height: 90%;
-	width: auto;
-	z-index: 2;
+	position: absolute;
+	top: 52%;
+	/* This positions the image relative to the parent container */
+	left: 73%;
+	/* Move the image 73% from the left side */
+	height: 55%;
+	/* Set the image height to 90% of the parent */
+	z-index: 10;
+	/* Ensure this image appears above the background */
+	transform: translate(-50%, -50%);
+	/* Adjust for proper centering if necessary */
 }
+
 
 .rewards {
 	margin-left: 2rem;
@@ -404,15 +407,6 @@ footer {
 
 	.nav-item:last-child {
 		display: block;
-	}
-
-	.howitworks {
-		height: 800px;
-	}
-	
-	.iphone-image {
-		width: 80%;
-		height: auto;
 	}
 }
 @media (max-width: 768px) {
