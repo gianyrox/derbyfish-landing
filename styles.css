@@ -46,25 +46,25 @@
 
 /* Text Size Classes */
 .small {
-	font-size: clamp(0.9rem, 2vw, 1.2rem);
+	font-size: 1.2rem;
 	padding: 0;
 	margin: 0;
 }
 
 .medium {
-	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-size: 2rem;
 	padding: 0;
 	margin: 0;
 }
 
 .large {
-	font-size: clamp(2rem, 4vw, 3rem);
+	font-size: 3rem;
 	padding: 0;
 	margin: 0;
 }
 
 .xlarge {
-	font-size: clamp(2.5rem, 5vw, 4rem);
+	font-size: 4rem;
 	padding: 0;
 	margin: 0;
 }
@@ -165,7 +165,6 @@ body {
 	height: 6rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
-	flex-wrap: wrap;
 }
 
 
@@ -198,8 +197,7 @@ body {
 			var(--dark-green) 0%,
 			var(--accent-red) 70%,
 			var(--accent-red) 100%);
-	min-height: 400px;
-	height: auto;
+	height: 400px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -209,22 +207,24 @@ body {
 	padding: 5%;
 	padding-top: 3%;
 
+	/* Adjust left padding to slightly move the header */
 	text-align: left;
 }
 
 .hero-copy {
-	width: 100%;
-	max-width: 600px;
-	padding-top: 2rem;
+	width: 50%;
+	height: 80%;
 	display: flex;
 	flex-direction: column;
 	margin: 1%;
+	padding-top: 5%;
 	gap: 1rem;
 }
 
 .hero-copy-bullets {
+	width: 100%;
 	display: flex;
-	padding: 1rem;
+	flex-grow: 1;
 	border: 2px solid var(--dark-green);
 	border-radius: 8px;
 	background-color: var(--dark-green-trans2);
@@ -233,9 +233,7 @@ body {
 }
 
 .hero-bullet {
-	width: 45%;
-	min-width: 150px;
-	padding: 1rem;
+	width: 22%;
 	text-align: center;
 	display: flex;
 	justify-content: space-evenly;
@@ -255,10 +253,11 @@ body {
 }
 
 .hero-cta {
-	width: 100%;
-	max-width: 600px;
-	padding: 2rem;
+	width: 50%;
+	height: 80%;
 	margin: 1%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
 	border: 2px solid var(--light);
 	border-radius: 8px;
 
@@ -350,18 +349,15 @@ body {
 
 
 .rewards {
-	margin: 1rem;
-	gap: 2rem;
-	padding: 2rem 0;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 }
 
 .rewards-copy {
-	width: 100%;
-	max-width: 600px;
-	text-align: center;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -370,11 +366,10 @@ body {
 }
 
 .rewards-image-section {
-	width: 100%;
-	max-width: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	width: 50%;
 }
 
 .rewards-image {
@@ -392,68 +387,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-	.nav {
-		height: auto;
-		padding: 1rem 0;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	.nav-list {
-		flex-direction: column;
-		gap: 1rem;
-		width: 100%;
-		align-items: center;
-	}
-
-	.nav-item {
-		margin: 0;
-		width: 100%;
-		text-align: center;
-	}
-
-	.input-row {
+	nav ul {
 		flex-direction: column;
 		align-items: center;
 	}
-
-	.input-field {
-		width: 80%;
-	}
-
-	.sign-up-button {
-		width: 80%;
-	}
-
-	.howitworks {
-		overflow: hidden;
-	}
-
-	.iphone-image {
-		height: 45%;
-		left: 50%;
-	}
-}
-
-@media (max-width: 480px) {
-	.hero-bullet {
-		width: 100%;
-	}
-
-	.hero {
-		padding: 1rem;
-	}
-
-	.hero-cta {
-		padding: 1rem;
-	}
-
-	.iphone-image {
-		height: 35%;
-	}
-}
-
-/* Add smooth transitions */
-* {
-	transition: all 0.3s ease-in-out;
 }
