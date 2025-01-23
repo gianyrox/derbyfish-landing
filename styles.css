@@ -163,8 +163,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	height: 6rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	flex-wrap: wrap;
 }
 
@@ -203,40 +203,40 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	/* Align items to the left */
 	align-items: flex-start;
+	/* Center items vertically */
 	padding: 5%;
 	padding-top: 3%;
+
 	text-align: left;
-	flex-wrap: wrap;
-	gap: 2rem;
 }
 
 .hero-copy {
-	width: 50%;
-	height: 80%;
+	width: 100%;
+	max-width: 600px;
+	padding-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	margin: 1%;
-	padding-top: 5%;
 	gap: 1rem;
 }
 
 .hero-copy-bullets {
-	width: 100%;
-	display: flex;
-	flex-grow: 1;
+	flex-wrap: wrap;
+	padding: 1rem;
+	gap: 1rem;
 	border: 2px solid var(--dark-green);
 	border-radius: 8px;
 	background-color: var(--dark-green-trans2);
 	justify-content: space-evenly;
 	flex-direction: row;
-	flex-wrap: wrap;
-	padding: 1rem;
-	gap: 1rem;
 }
 
 .hero-bullet {
-	width: 22%;
+	width: 45%;
+	min-width: 150px;
+	padding: 1rem;
 	text-align: center;
 	display: flex;
 	justify-content: space-evenly;
@@ -256,17 +256,21 @@ body {
 }
 
 .hero-cta {
-	width: 50%;
-	height: 80%;
+	width: 100%;
+	max-width: 600px;
+	padding: 2rem;
 	margin: 1%;
-	padding: 2.5%;
 	border: 2px solid var(--light);
 	border-radius: 8px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+
 }
+
+
 
 .centered {
 	justify-content: center;
@@ -348,20 +352,30 @@ body {
 
 .rewards {
 	margin: 1rem;
-	flex-wrap: wrap;
 	gap: 2rem;
 	padding: 2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .rewards-copy {
 	width: 100%;
 	max-width: 600px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+
 }
 
 .rewards-image-section {
 	width: 100%;
 	max-width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .rewards-image {
@@ -420,23 +434,6 @@ footer {
 		height: 45%;
 		left: 50%;
 	}
-
-	.hero-copy,
-	.hero-cta {
-		width: 100%;
-		max-width: 600px;
-		height: auto;
-		margin: 0;
-	}
-
-	.hero-bullet {
-		width: 45%;
-		min-width: 150px;
-	}
-
-	.hero {
-		padding: 2rem;
-	}
 }
 
 @media (max-width: 480px) {
@@ -444,7 +441,10 @@ footer {
 		width: 100%;
 	}
 
-	.hero,
+	.hero {
+		padding: 1rem;
+	}
+
 	.hero-cta {
 		padding: 1rem;
 	}
