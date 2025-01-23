@@ -199,7 +199,7 @@ body {
 	height: 400px;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: flex-end;
 	padding: 5%;
 	padding-top: 3%;
@@ -207,7 +207,7 @@ body {
 }
 
 .hero-copy {
-	width: 100%;
+	width: 50%;
 	height: 320px;
 	display: flex;
 	flex-direction: column;
@@ -247,12 +247,12 @@ body {
 }
 
 .hero-cta {
-	width: 100%;
+	width: 50%;
 	height: 320px;
 	margin: 1%;
 	border-radius: 8px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
 }
