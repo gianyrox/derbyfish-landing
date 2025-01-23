@@ -274,7 +274,6 @@ body {
 
 .store-button {
 	width: 39%;
-	transition: transform -1.2s ease;
 }
 
 .store-button:hover {
