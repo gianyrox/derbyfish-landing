@@ -264,19 +264,19 @@ body {
 /* Store Buttons */
 .store-buttons {
 	display: flex;
-	width: 99%;
-	gap: 0rem;
+	width: 320px;
+	gap: 1rem;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1rem;
 }
 
 .store-button {
-	width: 39%;
+	width: 140px;
 }
 
 .store-badge {
-	width: 99%;
+	width: 140px;
 	height: auto;
 }
 
