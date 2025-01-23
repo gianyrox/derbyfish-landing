@@ -196,13 +196,11 @@ body {
 			var(--dark-green) 0%,
 			var(--accent-red) 70%,
 			var(--accent-red) 100%);
-	height: 400px;
+	min-height: 400px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: flex-end;
-	padding: 5%;
-	padding-top: 3%;
 	text-align: left;
 }
 
@@ -264,19 +262,27 @@ body {
 /* Store Buttons */
 .store-buttons {
 	display: flex;
-	width: 99%;
-	gap: 0rem;
+	width: 100%;
+	max-width: 500px;
+	gap: 1.5rem;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1rem;
+	margin: 2rem auto;
 }
 
 .store-button {
-	width: 39%;
+	width: 45%;
+	max-width: 200px;
+	min-width: 120px;
+	transition: transform 0.2s ease;
+}
+
+.store-button:hover {
+	transform: scale(1.05);
 }
 
 .store-badge {
-	width: 99%;
+	width: 100%;
 	height: auto;
 }
 
@@ -423,12 +429,13 @@ footer {
 }
 @media (max-width: 767px) {
 	.store-buttons {
+		gap: 1rem;
 		flex-direction: column;
-		gap: 0rem;
+		align-items: center;
 	}
 
 	.store-button {
-		width: 59%;
+		width: 70%;
 	}
 }
 
