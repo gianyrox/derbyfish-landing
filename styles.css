@@ -286,17 +286,6 @@ body {
 	height: auto;
 }
 
-@media (max-width: 767px) {
-	.store-buttons {
-		flex-direction: column;
-		gap: 0rem;
-	}
-
-	.store-button {
-		width: 59%;
-	}
-}
-
 
 /* Input Row */
 .input-row {
