@@ -200,23 +200,18 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/* Align items to the left */
-	align-items: flex-start;
-	/* Center items vertically */
+	align-items: flex-end;
 	padding: 5%;
 	padding-top: 3%;
-
-	/* Adjust left padding to slightly move the header */
 	text-align: left;
 }
 
 .hero-copy {
 	width: 50%;
-	height: 80%;
+	height: 320px;
 	display: flex;
 	flex-direction: column;
 	margin: 1%;
-	padding-top: 5%;
 	gap: 1rem;
 }
 
@@ -253,21 +248,15 @@ body {
 
 .hero-cta {
 	width: 50%;
-	height: 80%;
+	height: 320px;
 	margin: 1%;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
 	border: 2px solid var(--light);
 	border-radius: 8px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
-
 }
-
-
 
 .centered {
 	justify-content: center;

@@ -2,5 +2,5 @@
   "gitdoc.commitOnSave": true,
   "gitdoc.pushOnSave": true,
 "gitdoc.pullOnSave": true,
-"gitdoc.enabled": false
+"gitdoc.enabled": true
 } 
