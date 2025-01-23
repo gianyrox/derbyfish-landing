@@ -249,7 +249,6 @@ body {
 	width: 50%;
 	height: 320px;
 	margin: 1%;
-	border: 2px solid var(--light);
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
