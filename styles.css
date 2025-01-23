@@ -423,7 +423,6 @@ footer {
 }
 @media (max-width: 767px) {
 	.store-buttons {
-		flex-direction: column;
 		gap: 0rem;
 	}
 
