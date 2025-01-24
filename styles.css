@@ -410,10 +410,6 @@ footer {
 	.nav-link {
 		display: none;
 	}
-
-	.nav-item:last-child {
-		display: block;
-	}
 }
 
 @media (max-width: 480px) {
