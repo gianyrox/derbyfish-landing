@@ -68,7 +68,11 @@
 	margin: 0;
 }
 
-
+.xxlarge {
+	font-size: clamp(3rem, 5vw, 5rem);
+	padding: 0;
+	margin: 0;
+}
 
 /* Font Weight Classes */
 .light-weight {
