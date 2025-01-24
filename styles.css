@@ -213,7 +213,7 @@ body {
 
 .hero-copy {
 	width: 95%;
-	height: 320px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	margin: 1%;
