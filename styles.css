@@ -415,6 +415,13 @@ footer {
 		display: block;
 	}
 }
+
+@media (max-width: 480px) {
+	.nav-item:last-child {
+		display: none;
+	}
+}
+
 @media (max-width: 768px) {
 	.hero {
 		flex-direction: column;
