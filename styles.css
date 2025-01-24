@@ -407,7 +407,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-	.nav-list {
+	.nav- {
 		display: none;
 	}
 
