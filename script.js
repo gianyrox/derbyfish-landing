@@ -1,36 +1,3 @@
-// Load header component
-async function loadHeader() {
-    const response = await fetch('/components/header.html');
-    const headerHtml = await response.text();
-    document.getElementById('header-container').innerHTML = headerHtml;
-}
-
-// Router function
-async function router() {
-    const path = window.location.pathname;
-    const mainContent = document.getElementById('main-content');
-
-    // Load header for all routes
-    await loadHeader();
-
-    // Route handling
-    switch (path) {
-        case '/':
-            mainContent.innerHTML = document.getElementById('home-template').innerHTML;
-            break;
-        case '/privacy':
-            const response = await fetch('/privacy-content.html');
-            const privacyHtml = await response.text();
-            mainContent.innerHTML = privacyHtml;
-            break;
-        default:
-            mainContent.innerHTML = '<h1>404 - Page Not Found</h1>';
-    }
-}
-
-// Initialize router
-window.addEventListener('load', router);
-window.addEventListener('popstate', router);
 
 document.getElementById('emailForm')?.addEventListener('submit', async (event) => {
   event.preventDefault();
