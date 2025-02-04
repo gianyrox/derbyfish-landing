@@ -370,8 +370,8 @@ body {
     position: absolute;
     top: 52%;
     left: 73%;
-    width: 55%;
-    height: auto;
+    height: 47%;
+    width: auto;
     z-index: 11;
     transform: translate(-50%, -50%);
 }
