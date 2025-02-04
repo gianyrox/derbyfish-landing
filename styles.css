@@ -366,6 +366,15 @@ body {
 	transform: translate(-50%, -50%);
 	/* Adjust for proper centering if necessary */
 }
+.feed-image {
+    position: absolute;
+    top: 52%;
+    left: 73%;
+    width: 55%;
+    height: auto;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+}
 
 
 .rewards {
