@@ -348,34 +348,31 @@ body {
 .background-image {
 	width: 100%;
 	height: auto;
-	/* Maintain aspect ratio */
 	display: block;
-	/* Remove any space below the image */
 }
 
-.iphone-image {
+.demo-screens {
 	position: absolute;
 	top: 52%;
-	/* This positions the image relative to the parent container */
 	left: 73%;
-	/* Move the image 73% from the left side */
 	height: 55%;
-	/* Set the image height to 90% of the parent */
-	z-index: 10;
-	/* Ensure this image appears above the background */
 	transform: translate(-50%, -50%);
-	/* Adjust for proper centering if necessary */
-}
-.feed-image {
-    position: absolute;
-    top: 52%;
-    left: 73%;
-    height: 47%;
-    width: auto;
-    z-index: 11;
-    transform: translate(-50%, -50%);
+	z-index: 10;
 }
 
+.demo-screen {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.demo-screen.active {
+	opacity: 1;
+}
 
 .rewards {
 	margin-left: 2rem;

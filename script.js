@@ -1,4 +1,3 @@
-
 document.getElementById('emailForm')?.addEventListener('submit', async (event) => {
   event.preventDefault();
 
@@ -24,5 +23,25 @@ document.getElementById('emailForm')?.addEventListener('submit', async (event) =
     console.error('Error:', error);
     alert('Network error. Please try again later.');
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const demoScreens = document.querySelectorAll('.demo-screen');
+    let currentScreenIndex = 0;
+    const rotationInterval = 3000; // 3 seconds
+
+    function rotateScreens() {
+        // Remove active class from current screen
+        demoScreens[currentScreenIndex].classList.remove('active');
+        
+        // Move to next screen, or back to first if at end
+        currentScreenIndex = (currentScreenIndex + 1) % demoScreens.length;
+        
+        // Add active class to new current screen
+        demoScreens[currentScreenIndex].classList.add('active');
+    }
+
+    // Start the rotation
+    setInterval(rotateScreens, rotationInterval);
 });
 
