@@ -363,13 +363,28 @@ body {
 .demo-screen {
 	height: 100%;
 	width: auto;
+	position: absolute;
+	top: 0;
+	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
 
 .demo-screen.active {
 	opacity: 1;
 }
-
+.iphone-image {
+	position: absolute;
+	top: 52%;
+	/* This positions the image relative to the parent container */
+	left: 73%;
+	/* Move the image 73% from the left side */
+	height: 55%;
+	/* Set the image height to 90% of the parent */
+	z-index: 10;
+	/* Ensure this image appears above the background */
+	transform: translate(-50%, -50%);
+	/* Adjust for proper centering if necessary */
+}
 .rewards {
 	margin-left: 2rem;
 	margin-right: 2rem;
