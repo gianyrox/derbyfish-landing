@@ -356,7 +356,6 @@ body {
 	top: 52%;
 	left: 73%;
 	height: 55%;
-	transform: translate(-50%, -50%);
 	z-index: 10;
 }
 
@@ -365,6 +364,7 @@ body {
 	width: auto;
 	position: absolute;
 	top: 0;
+	transform: translate(-50%, -50%);
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
