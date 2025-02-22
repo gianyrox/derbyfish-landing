@@ -278,8 +278,8 @@ body {
 }
 
 .store-button {
-	max-height: 80px;
-	min-height: 40px;
+	flex: 1;
+	height: 60px;
 	transition: transform 0.2s ease;
 }
 
@@ -289,7 +289,8 @@ body {
 
 .store-badge {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: contain;
 }
 
 
