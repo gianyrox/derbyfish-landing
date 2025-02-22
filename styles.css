@@ -278,9 +278,8 @@ body {
 }
 
 .store-button {
-	width: 45%;
-	max-width: 200px;
-	min-width: 120px;
+	max-height: 80px;
+	min-height: 40px;
 	transition: transform 0.2s ease;
 }
 
