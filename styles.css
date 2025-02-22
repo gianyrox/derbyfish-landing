@@ -278,8 +278,9 @@ body {
 }
 
 .store-button {
-	flex: 1;
-	height: 60px;
+	width: 45%;
+	max-width: 200px;
+	min-width: 120px;
 	transition: transform 0.2s ease;
 }
 
@@ -289,8 +290,7 @@ body {
 
 .store-badge {
 	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	height: auto;
 }
 
 
@@ -302,7 +302,6 @@ body {
 	justify-content: center;
 	/* Space between input and button */
 }
-
 
 .input-field {
 	font-size: 1rem;
