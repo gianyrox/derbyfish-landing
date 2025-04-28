@@ -531,3 +531,28 @@ footer {
     }
 }
 
+/* Countdown Timer Styles */
+.countdown-container {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: fit-content;
+    min-width: 300px;
+}
+
+.countdown-text {
+    color: var(--light);
+    font-size: 1.2rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.countdown-text span {
+    color: var(--accent-yellow);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
