@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Countdown Timer Functionality
 function updateCountdown() {
-    const targetDate = new Date('May 2, 2025 00:00:00').getTime();
+    const targetDate = new Date('May 3, 2025 00:00:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
